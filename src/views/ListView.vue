@@ -24,7 +24,7 @@
   </ul>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const people = [
   {
     name: 'Leslie Alexander',
