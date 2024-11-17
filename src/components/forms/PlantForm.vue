@@ -25,12 +25,9 @@ const substratOptions = [
   { id: 3, label: 'Blumenerde' },
 ]
 
-const submitHandler = () => {
-  /*   this.loading = true;
-
-  setTimeout(() => {
-    this.loading = false;
-  }, 2000); */
+const submitHandler = async (fields: any) => {
+    await new Promise((r) => setTimeout(r, 1000))
+    alert(JSON.stringify(fields))
 }
 </script>
 
