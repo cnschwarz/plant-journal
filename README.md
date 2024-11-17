@@ -1,4 +1,6 @@
-# plant-journal 🪴
+# plantario 🪴
+
+A mix of the spanish words for plant (planta) and journal (diario)
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -10,7 +12,7 @@ This template should help get you started developing with Vue 3 in Vite.
 
 - 🏗 Import information for different plants 🌻
 
-- 🏗 Create, edit and delete plant entries 🍃
+- 🏗 Create, edit and delete plants 🍃
 
 - 🏗 Overview of your plants 😲
 

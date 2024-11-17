@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+import Section from '@/components/Section.vue'
+import CallToAction from '@/components/CallToAction.vue'
 </script>
 
 <template>
@@ -30,5 +32,7 @@
           href="https://unsplash.com/photos/dDVU6D_6T80?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
       </p>
     </div>
+    <Section />
+    <CallToAction />
   </main>
 </template>
