@@ -1,13 +1,7 @@
 <script setup lang="ts">
 // import { onMounted, ref } from 'vue'
 import { RouterView } from 'vue-router'
-
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Overview', href: '/list' },
-  { name: 'Add new 🌱', href: '/new' },
-  { name: 'About', href: '/about' },
-]
+import AppHeader from '@/components/AppHeader.vue'
 
 // const mobileMenuOpen = ref(false)
 /* To enable once supabase setup is ready
@@ -25,21 +19,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <main>
-    <header>
-      <div class="flex items-center">
-        <nav class="mx-auto justify-between lg:px-8" aria-label="Global">
-          <div class="lg:gap-x-12">
-            <a v-for="item in navigation" :key="item.name" :href="item.href"
-              class="text-md font-semibold leading-6 text-black mx-2">{{ item.name }}</a>
-          </div>
-        </nav>
-      </div>
-    </header>
-
+  <AppHeader />
+  <main class="px-7 py-14">
     <RouterView />
+    <footer class="flex items-center">
+      Proudly maintained by Ignotus 2022-ongoing
+    </footer>
   </main>
-  <footer class="flex items-center">
-    Proudly maintained by Ignotus 2022-ongoing
-  </footer>
+
 </template>
